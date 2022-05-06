@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const { nanoid } = require('nanoid');
 const { notes } = require('./db/db.json');
-const createNewNote = require('./lib/notes');
+const { createNewNote } = require('./lib/notes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
