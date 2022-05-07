@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const { nanoid } = require('nanoid');
-const { createNewNote } = require('./lib/notes');
-const { notes } = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+const { notes } = require('./db/db.json');
+const createNewNote = require('./lib/notes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
