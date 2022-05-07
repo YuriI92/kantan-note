@@ -1,49 +1,7 @@
-{
-  "notes": [
-    {
-      "title": "Test 5",
-      "text": "Test 5 text",
-      "id": "deMQb9uFuCPmv4WQvbcAi"
-    },
-    {
-      "title": "Test 6",
-      "text": "test 6 text",
-      "id": "tYCVY22Bhutm-Q67AJw4u"
-    },
-    {
-      "title": "Note test 7",
-      "text": "Note test 7 text",
-      "id": "Iou3Ircdd8XAV6V4nU4ww"
-    },
-    {
-      "title": "Test 8",
-      "text": "test 8 text",
-      "id": "LswTodLLKEa75aWSFtJx2"
-    },
-    {
-      "title": "Test 9",
-      "text": "test 9 text",
-      "id": "M7fB_D4U3xQoZHhQNXtMq"
-    },
-    {
-      "title": "Note test 10",
-      "text": "Note test 10 text",
-      "id": "fz9sAP0f_hVIbspZWACXw"
-    },
-    {
-      "title": "Note test 11",
-      "text": "Note test 11 text",
-      "id": "9tMc7XoqP4HQ3TJJXGXMQ"
-    },
-    {
-      "title": "Note test 12",
-      "text": "Note test 12 text",
-      "id": "F7bgXF8URwDpnrVvQn_OP"
-    },
-    {
-      "title": "Note test 13",
-      "text": "Note test 13 text",
-      "id": "t4UhWyMZ80tHiTUa-TSAs"
-    }
-  ]
-}
+[
+  {
+    "title": "test 10",
+    "text": "test10",
+    "id": "0GwSB6ElxzQ05l039YfgN"
+  }
+]
