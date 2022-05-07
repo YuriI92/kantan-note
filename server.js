@@ -1,9 +1,7 @@
 const express = require('express');
 const path = require('path');
-// const fs = require('fs');
 const { nanoid } = require('nanoid');
 const { createNewNote, deleteNote } = require('./lib/notes');
-const notes = require('./db/db.json');
 const { readFile } = require('fs/promises');
 
 const PORT = process.env.PORT || 3001;
