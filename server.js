@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const { nanoid } = require('nanoid');
 const { notes } = require('./db/db.json');
-const createNewNote = require('./lib/notes');
+const { createNewNote, deleteNote } = require('./lib/notes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -19,6 +19,10 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     req.body.id = nanoid();
     res.json(createNewNote(req.body, notes));
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+    res.json(deleteNote(req.params.id, notes));
 });
 
 app.get('/', (req, res) => {

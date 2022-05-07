@@ -123,7 +123,10 @@ const renderNoteList = async (notes) => {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
 
+  console.log(jsonNotes);
+
   let noteListItems = [];
+  console.log(noteListItems);
 
   // Returns HTML element with or without a delete button
   const createLi = (text, delBtn = true) => {
