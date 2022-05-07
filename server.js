@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const { nanoid } = require('nanoid');
 const { notes } = require('./db/db.json');
-const { createNewNote, findById } = require('./lib/notes');
+const { createNewNote, deleteNote } = require('./lib/notes');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -21,8 +21,7 @@ app.post('/api/notes', (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    const result = findById(req.params.id, notes);
-    console.log(result);
+    res.json(deleteNote(req.params.id, notes));
 });
 
 app.get('/', (req, res) => {
